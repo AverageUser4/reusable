@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker</title>
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+  <div id="mainWrapper">
+    
+	  <button id="colorOpenButton">Otwórz</button>
+	
+      <div id="colorPickerContainer">
+
+        <div id="colorContainer">
+          <div id="color"></div>
+        </div>
+
+        <div id="slidersContainer">
+          <input id="r" name="r" type="range" min="0" max="255" value="255">
+          <input id="g" name="g" type="range" min="0" max="255" value="255">
+          <input id="b" name="b" type="range" min="0" max="255" value="255">
+          <input id="a" name="a" type="range" min="0" max="1" value="1" step="0.1">
+        </div>
+
+        <div id="sliderNamesContainer">
+          <p>Red</p>
+          <p>Green</p>
+          <p>Blue</p>
+          <p>Alpha</p>
+        </div>
+
+        <div id="valuesContainer">
+          <p id="rVal">R: 255</p>
+          <p id="gVal">G: 255</p>
+          <p id="bVal">B: 255</p>
+          <p id="aVal">A: 1</p>
+        </div>
+
+        <div id="randomColorButton">Random</div>
+
+        <button id="colorCloseButton">X</button>
+
+      </div>
+
+  </div>
+
+  <script defer src="main.js"></script>
+
+</body>
+
+</html>
